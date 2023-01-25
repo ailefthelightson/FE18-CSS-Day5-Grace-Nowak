@@ -1,0 +1,10 @@
+
+@mixin changeCols($col, $fr) {
+    grid-template-columns: repeat($col, $fr);
+}
+
+@mixin imgFit{
+    background-size: cover;
+    background-position: center;
+}
+   
