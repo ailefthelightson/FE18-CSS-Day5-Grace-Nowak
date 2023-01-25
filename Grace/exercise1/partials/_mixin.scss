@@ -6,5 +6,11 @@
 @mixin imgFit{
     background-size: cover;
     background-position: center;
+    max-width: 100%;
+    height:auto;
 }
-   
+
+@mixin gridArea($rs,$cs,$re,$ce)    {
+    grid-area:($rs/$cs/$re/$ce);
+}
+
