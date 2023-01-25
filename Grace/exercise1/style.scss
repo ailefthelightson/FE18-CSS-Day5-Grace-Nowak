@@ -1,17 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "partials/reset";
+@import "partials/body";
 
-body {
-    width: auto;
-    font-family: 'Germania One', cursive;
-    font-size: 16px;
-    text-align: center;
-}
+
 
 nav {
     background-color: rgb(186, 135, 39);
