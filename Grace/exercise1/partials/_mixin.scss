@@ -10,7 +10,15 @@
     height:auto;
 }
 
-@mixin gridArea($rs,$cs,$re,$ce)    {
-    grid-area:($rs/$cs/$re/$ce);
+@mixin grid-row-start ($row_start) {
+    grid-row-start: $row-start;
 }
-
+@mixin grid-row-end ($row-end){
+    grid-row-start: $row-end;
+}
+@mixin grid-column-start ($column-start)    {
+    grid-column-start: $column-start;
+}
+@mixin grid-column-end ($column-end)    {
+    grid-column-start: $column-end;
+}
