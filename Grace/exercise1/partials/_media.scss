@@ -2,25 +2,25 @@
 
 @media screen and (min-width:761px) and (max-width:980px) {
     .container {             
-        @include changeCols(5, 1fr);
-        .item:first-child   {
-            @include gridArea(1,1,11,4);
-        }
-        .item:nth-child(2)  {
-            @include gridArea(11,1,33,4);
-        }
-        .item:nth-child(3)  {
-            @include gridArea(33,1,44,4);
-        }
-        .item:nth-child(4)  {
-            @include gridArea(44,1,55,4);
-        }
-        .item:nth-child(5)  {
-            @include gridArea(55,1,66,4);
-        }
-        .item:nth-child(6)  {
-            @include gridArea(66,1,77,4);
-        }
+        @include changeCols(1, 1fr);
+        // .item:first-child   {
+        //     @include gridArea(1,1,11,4);
+        // }
+        // .item:nth-child(2)  {
+        //     @include gridArea(11,1,33,4);
+        // }
+        // .item:nth-child(3)  {
+        //     @include gridArea(33,1,44,4);
+        // }
+        // .item:nth-child(4)  {
+        //     @include gridArea(44,1,55,4);
+        // }
+        // .item:nth-child(5)  {
+        //     @include gridArea(55,1,66,4);
+        // }
+        // .item:nth-child(6)  {
+        //     @include gridArea(66,1,77,4);
+        // }
     }
 }
 
