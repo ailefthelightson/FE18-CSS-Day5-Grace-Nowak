@@ -1,20 +1,38 @@
-
-
 @media screen and (min-width:761px) and (max-width:980px) {
-    .container {             
+    .container {
         @include changeCols(1, 1fr);
-        // .item:first-child   {
-        //     @include gridArea(1,1,11,4);
-        // }
-        // .item:nth-child(2)  {
-        //     @include gridArea(11,1,33,4);
-        // }
-        // .item:nth-child(3)  {
-        //     @include gridArea(33,1,44,4);
-        // }
-        // .item:nth-child(4)  {
+
+        .item:first-child {
+            @include grid-row-start(1);
+            @include grid-row-end(11);
+            @include grid-column-start(1);
+            @include grid-column-end(4);
+            // @include gridArea(1,1,11,4);
+        }
+
+        .item:nth-child(2) {
+            // @include gridArea(11,1,33,4);
+            @include grid-row-start(11);
+            @include grid-row-end(33);
+            @include grid-column-start(1);
+            @include grid-column-end(4);
+        }
+
+        .item:nth-child(3) {
+            // @include gridArea(33, 1, 44, 4);
+            @include grid-row-start(33);
+            @include grid-row-end(44);
+            @include grid-column-start(1);
+            @include grid-column-end(4);
+        }
+
+        .item:nth-child(4)  {
         //     @include gridArea(44,1,55,4);
-        // }
+        @include grid-row-start(44);
+        @include grid-row-end(55);
+        @include grid-column-start(1);
+        @include grid-column-end(4);
+        }
         // .item:nth-child(5)  {
         //     @include gridArea(55,1,66,4);
         // }
